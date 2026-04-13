@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Wenyan Fan | AI & Business Analytics Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+            background: #f8fafc;
+            color: #1e293b;
+            line-height: 1.6;
+            padding: 2rem 1rem;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* Navigation */
+        nav {
+            background: white;
+            border-radius: 60px;
+            padding: 0.75rem 1.5rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+            position: sticky;
+            top: 1rem;
+            z-index: 100;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #475569;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+
+        nav a:hover {
+            color: #4f46e5;
+        }
+
+        /* Sections */
+        section {
+            background: white;
+            border-radius: 32px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 4px 6px -2px rgba(0,0,0,0.05);
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            background: linear-gradient(135deg, #1e293b, #4f46e5);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            margin-bottom: 1rem;
+        }
+
+        h2 {
+            font-size: 1.75rem;
+            font-weight: 600;
+            margin-bottom: 1.25rem;
+            border-left: 5px solid #4f46e5;
+            padding-left: 1rem;
+        }
+
+        h3 {
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin: 1rem 0 0.5rem;
+            color: #1e293b;
+        }
+
+        .tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin: 1rem 0;
+        }
+
+        .tag {
+            background: #eef2ff;
+            color: #4f46e5;
+            padding: 0.25rem 0.75rem;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 500;
+        }
+
+        .skill-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-top: 1rem;
+        }
+
+        .skill-category {
+            background: #f8fafc;
+            padding: 1rem;
+            border-radius: 20px;
+        }
+
+        .skill-category h3 {
+            margin-top: 0;
+            color: #4f46e5;
+        }
+
+        .skill-category ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .skill-category li {
+            padding: 0.25rem 0;
+            border-bottom: 1px solid #e2e8f0;
+        }
+
+        .project-card {
+            background: #f8fafc;
+            border-radius: 24px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .project-title {
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: #0f172a;
+        }
+
+        .project-meta {
+            color: #64748b;
+            font-size: 0.85rem;
+            margin-bottom: 0.75rem;
+        }
+
+        .project-section {
+            margin: 0.75rem 0;
+        }
+
+        .project-section strong {
+            color: #4f46e5;
+        }
+
+        hr {
+            margin: 1.5rem 0;
+            border: none;
+            border-top: 2px solid #e2e8f0;
+        }
+
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+        }
+
+        .btn {
+            display: inline-block;
+            background: #4f46e5;
+            color: white;
+            padding: 0.6rem 1.2rem;
+            border-radius: 40px;
+            text-decoration: none;
+            font-weight: 500;
+            margin-top: 1rem;
+            transition: background 0.2s;
+        }
+
+        .btn:hover {
+            background: #4338ca;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem 0;
+            color: #94a3b8;
+            font-size: 0.85rem;
+        }
+
+        @media (max-width: 640px) {
+            section {
+                padding: 1.5rem;
+            }
+            nav {
+                border-radius: 30px;
+                gap: 1rem;
+                font-size: 0.85rem;
+            }
+            h1 {
+                font-size: 1.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <!-- Navigation -->
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#resume">Resume</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- Home -->
+    <section id="home">
+        <h1>Wenyan Fan</h1>
+        <p style="font-size: 1.2rem; font-weight: 500; color: #334155;">Seeking a Data / Business Analyst role in Insurance or FinTech | MSc in AI & Business Analytics · 5+ years in AI service innovation</p>
+        <div class="tags">
+            <span class="tag">Data Analysis</span>
+            <span class="tag">Business Analytics</span>
+            <span class="tag">Python</span>
+            <span class="tag">SQL</span>
+            <span class="tag">Machine Learning</span>
+            <span class="tag">Insurance/FinTech</span>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section id="about">
+        <h2>About Me</h2>
+        <div style="display: flex; gap: 1.5rem; flex-wrap: wrap; align-items: flex-start;">
+            <!-- 抽象头像区域：用Emoji/图标代替 -->
+            <div style="font-size: 80px; background: #eef2ff; width: 100px; height: 100px; border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+                🤖
+            </div>
+            <div style="flex: 1;">
+                <p>I am an MSc in Artificial Intelligence and Business Analytics student at <strong>Lingnan University</strong>, combined with 5+ years of industry experience in insurance and fintech (AIA, Ping An). I also hold a <strong>Double Degree in International Law from Wuhan University</strong>, which gives me a unique perspective on compliance, risk, and legal analytics.</p>
+                <p>I specialize in AI service innovation, user behavior analysis, and process optimization. I have led projects that increased active users to 600+, achieved 98.6% answer rates for AI robots, and built NLP-based quality inspection systems.</p>
+                <p><strong>Education:</strong></p>
+                <ul>
+                    <li>🎓 Lingnan University — MSc in AI & Business Analytics (AIBA), Expected 2026</li>
+                    <li>🎓 Wuhan University — Double Degree in International Law, 2014-2016</li>
+                    <li>🎓 South-Central Minzu University — Bachelor in Finance (Actuarial Science), 2017 | GPA 3.4/4.0</li>
+                </ul>
+                <p><strong>Strengths:</strong></p>
+                <ul>
+                    <li>✅ AI service innovation and optimization</li>
+                    <li>✅ User behavior data analysis (40,000+ consultations analyzed)</li>
+                    <li>✅ Business analytics & data-driven decision making</li>
+                    <li>✅ Cross-functional leadership (AIA, Ping An)</li>
+                    <li>✅ Legal & compliance awareness</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="skill-grid">
+            <div class="skill-category">
+                <h3>💻 Technical Skills</h3>
+                <ul>
+                    <li>Python (PyTorch, TensorFlow, Scikit-learn)</li>
+                    <li>Pandas, NumPy, Data Visualization</li>
+                    <li>Graph Neural Networks (GNN)</li>
+                    <li>LSTM, GRU, Transformer</li>
+                    <li>RAG, Vector Database</li>
+                    <li>Multi-Agent Systems</li>
+                </ul>
+            </div>
+            <div class="skill-category">
+                <h3>📊 Business Skills</h3>
+                <ul>
+                    <li>A/B testing logic</li>
+                    <li>NPS system design</li>
+                    <li>Customer journey optimization</li>
+                    <li>Process re-engineering</li>
+                    <li>ROI analysis</li>
+                    <li>Regulatory compliance</li>
+                </ul>
+            </div>
+            <div class="skill-category">
+                <h3>🛠️ Tools</h3>
+                <ul>
+                    <li>Jupyter Notebook / Git / Docker</li>
+                    <li>Cloud APIs (OpenAI)</li>
+                    <li>Local LLM (Llama)</li>
+                    <li>Excel / Google Sheets</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects">
+        <h2>Projects</h2>
+
+        <!-- Project 1 -->
+        <div class="project-card">
+            <div class="project-title">🔍 SonarGNN: Web3 Anti-Money Laundering Radar</div>
+            <div class="project-meta">2024-2025 | Individual Project</div>
+            <div class="project-section"><strong>Problem:</strong> Money laundering on Web3/blockchain is growing; transaction graphs are massive and imbalanced.</div>
+            <div class="project-section"><strong>Data:</strong> Ethereum blockchain transaction records with labeled illicit/legitimate addresses, millions of nodes and edges.</div>
+            <div class="project-section"><strong>Approach:</strong> Designed GNN-based detector with node features (transaction frequency, value) and structural patterns; used sampling to handle imbalance.</div>
+            <div class="project-section"><strong>Outcome:</strong> Outperformed XGBoost by 15% in F1-score; high precision/recall on illicit detection.</div>
+            <div class="project-section"><strong>My Contribution:</strong> Full individual project — GNN design, preprocessing, evaluation.</div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card">
+            <div class="project-title">📈 Stock Price Trend Prediction (ML vs DL)</div>
+            <div class="project-meta">2024-2025 | Individual Project</div>
+            <div class="project-section"><strong>Problem:</strong> Stock trend prediction is challenging due to high volatility and noise.</div>
+            <div class="project-section"><strong>Data:</strong> Historical stock data (Yahoo Finance) including price, volume, technical indicators over several years.</div>
+            <div class="project-section"><strong>Approach:</strong> Two-stage feature engineering (statistical + sequential features); compared Random Forest, XGBoost vs LSTM, GRU.</div>
+            <div class="project-section"><strong>Outcome:</strong> LSTM with two-stage features achieved 82%+ accuracy; feature engineering improved all models by 10-15%.</div>
+            <div class="project-section"><strong>My Contribution:</strong> End-to-end individual project — data collection, modeling, comparison.</div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-card">
+            <div class="project-title">🎙️ Multi-Agent Podcast Generation System</div>
+            <div class="project-meta">2024-2025 | Individual Project</div>
+            <div class="project-section"><strong>Problem:</strong> Generating multi-speaker podcast content automatically is costly and has privacy concerns with cloud APIs.</div>
+            <div class="project-section"><strong>Data:</strong> Text corpus from news/blogs/reports; audio synthesis datasets.</div>
+            <div class="project-section"><strong>Approach:</strong> Multi-agent collaborative system using LLMs for script generation, voice cloning, dialogue synthesis; compared cloud API vs local deployment (Llama, Edge TTS).</div>
+            <div class="project-section"><strong>Outcome:</strong> Generated coherent multi-episode podcasts; local deployment achieved 60% cost reduction with better privacy.</div>
+            <div class="project-section"><strong>My Contribution:</strong> Full individual project — system design, API integration, local optimization.</div>
+        </div>
+
+        <!-- Project 4 -->
+        <div class="project-card">
+            <div class="project-title">💄 BeautyModel-Lab: Skincare QA System</div>
+            <div class="project-meta">2024-2025 | Individual Project</div>
+            <div class="project-section"><strong>Problem:</strong> General QA systems lack domain expertise in skincare/beauty, giving generic advice.</div>
+            <div class="project-section"><strong>Data:</strong> Curated skincare knowledge base (scientific papers, product specs, ingredient DB, expert Q&As).</div>
+            <div class="project-section"><strong>Approach:</strong> RAG system combining domain-specific vector database + LLM; integrates scientific analysis with trend responsiveness.</div>
+            <div class="project-section"><strong>Outcome:</strong> Accurate, evidence-based answers with ingredient explanations; adapts to emerging trends within days.</div>
+            <div class="project-section"><strong>My Contribution:</strong> Individual project — knowledge base construction, RAG pipeline, LLM integration.</div>
+        </div>
+    </section>
+
+    <!-- Resume -->
+    <section id="resume">
+        <h2>Resume / CV</h2>
+        <p>📄 Download my full resume (PDF) below:</p>
+        <a href="#" class="btn" id="resumeLink">⬇️ Download Resume (PDF)</a>
+        <p style="margin-top: 1rem; font-size: 0.85rem; color: #64748b;">* 请替换上面的 # 为你的简历PDF链接（上传到GitHub或Google Drive）</p>
+        <!-- 简版简历 -->
+        <hr>
+        <h3>Quick Summary</h3>
+        <p><strong>Experience:</strong> AIA (Sr. Specialist, AI Innovation, 2022-2025) | Ping An (PM, Intelligent Operation, 2021-2022) | Ping An (Product Manager, 2020-2021)</p>
+        <p><strong>Education:</strong> Lingnan MSc AIBA (2026) | Wuhan University Int'l Law Double Degree | Finance (Actuarial Science) Bachelor</p>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+        <h2>Contact</h2>
+        <div class="contact-info">
+            <p>📧 <strong>Email:</strong> fanwenyan2025F@163.com</p>
+            <p>🔗 <strong>LinkedIn:</strong> <a href="#">linkedin.com/in/wenyan-fan</a> (optional)</p>
+            <p>🐙 <strong>GitHub:</strong> <a href="#">github.com/你的用户名</a> (optional)</p>
+        </div>
+    </section>
+
+    <footer>
+        © 2025 Wenyan Fan | Last updated: April 2025
+    </footer>
+</div>
+
+<script>
+    // 如果你有简历PDF链接，修改下面的URL
+    // 例如: const resumeURL = "https://github.com/你的用户名/你的仓库名/raw/main/resume.pdf";
+    const resumeURL = "#";  // 把 # 改成你的PDF链接
+    document.getElementById("resumeLink").href = resumeURL;
+</script>
+</body>
+</html>
